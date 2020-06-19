@@ -1,6 +1,6 @@
-# EEx Formatter/Beautify
+# EEx Formatter
 
-Most of solution that exist in the internet is tell you to create a task and call it using ctrl-shift-p menu.
+Fork of [EEx Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=zerokol.vscode-eex-beautify) with support of new elixir-ls html-eex.
 
 This extension basically using [htmlbeautifier](https://github.com/threedaymonk/htmlbeautifier) to format your file using the Formatter API from the vscode, so no need to create a hack using Task, etc.
 
