@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
         document: vscode.TextDocument
       ): vscode.TextEdit[] {
         const ext = process.platform === "win32" ? ".bat" : "";
-        const beautifier = cp.spawn(`htmlbeautifier${ext}`, ["-v"]);
+        const beautifier = cp.spawn(`htmlbeautifier${ext}`, ["help"]);
 
         beautifier.on("error", err => {
           if (err.message.includes("ENOENT")) {
