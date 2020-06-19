@@ -2,7 +2,7 @@
   "name": "vscode-eex-format",
   "displayName": "Elixir Templates Formatter",
   "description": "Format elixir templates files",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "RoyalMist",
   "license": "MIT",
   "bugs": "https://github.com/RoyalMist/vscode-eex-format/issues",
