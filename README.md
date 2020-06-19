@@ -6,11 +6,11 @@ This extension basically using [htmlbeautifier](https://github.com/threedaymonk/
 
 ## Features
 
-![Demo GIF](https://raw.githubusercontent.com/zerokol/vscode-eex-beautify/master/images/demo.gif)
+![Demo GIF](https://raw.githubusercontent.com/RoyalMist/vscode-eex-format/master/images/demo.gif)
 
 ## Requirements
 
-```
+```bash
 gem install htmlbeautifier
 ```
 
@@ -24,13 +24,13 @@ NOTE: For you that have a filename with extension `.html.eex`, your file might b
 
 ## Settings
 
-| Setting                              | Description                                           | Default |
-| ------------------------------------ | ----------------------------------------------------- | ------- |
-| `vscode-eex-beautify.tabStops`       | Set number of spaces per indent                       | 2       |
-| `vscode-eex-beautify.tab`            | Indent using tabs                                     | false   |
-| `vscode-eex-beautify.indentBy`       | Indent the output by NUMBER steps                     | 0       |
-| `vscode-eex-beautify.stopOnErrors`   | Stop when invalid nesting is encountered in the input | false   |
-| `vscode-eex-beautify.keepBlankLines` | Set number of consecutive blank lines                 | 0       |
+| Setting                            | Description                                           | Default |
+| ---------------------------------- | ----------------------------------------------------- | ------- |
+| `vscode-eex-format.tabStops`       | Set number of spaces per indent                       | 2       |
+| `vscode-eex-format.tab`            | Indent using tabs                                     | false   |
+| `vscode-eex-format.indentBy`       | Indent the output by NUMBER steps                     | 0       |
+| `vscode-eex-format.stopOnErrors`   | Stop when invalid nesting is encountered in the input | false   |
+| `vscode-eex-format.keepBlankLines` | Set number of consecutive blank lines                 | 0       |
 
 ## References
 

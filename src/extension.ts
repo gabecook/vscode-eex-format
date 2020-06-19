@@ -8,7 +8,7 @@ import * as cp from "child_process";
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   vscode.languages.registerDocumentFormattingEditProvider(
-    ["eex", "HTML (EEx)"],
+    ["eex", "HTML (EEx)", "html-eex"],
     {
       provideDocumentFormattingEdits(
         document: vscode.TextDocument
@@ -57,12 +57,12 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
 
 function cli_options() {
-  const config = vscode.workspace.getConfiguration("vscode-eex-beautify");
+  const config = vscode.workspace.getConfiguration("vscode-eex-format");
   let acc: string[] = [];
-  return Object.keys(config).reduce(function(acc, key) {
+  return Object.keys(config).reduce(function (acc, key) {
     switch (key) {
       case "indentBy":
         acc.push("--indent-by", config[key]);

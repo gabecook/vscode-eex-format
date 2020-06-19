@@ -1,15 +1,15 @@
 {
-  "name": "vscode-eex-beautify",
-  "displayName": "EEx Formatter/Beautify",
-  "description": "Format/Beautify EEx files",
-  "version": "0.1.8",
-  "publisher": "zerokol",
+  "name": "vscode-eex-format",
+  "displayName": "Elixir Templates Formatter",
+  "description": "Format elixir templates files",
+  "version": "0.0.1",
+  "publisher": "RoyalMist",
   "license": "MIT",
-  "bugs": "https://github.com/zerokol/vscode-eex-beautify/issues",
+  "bugs": "https://github.com/RoyalMist/vscode-eex-format/issues",
   "icon": "images/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zerokol/vscode-eex-beautify"
+    "url": "https://github.com/RoyalMist/vscode-eex-format"
   },
   "engines": {
     "vscode": "^1.28.0"
@@ -19,7 +19,8 @@
   ],
   "activationEvents": [
     "onLanguage:eex",
-    "onLanguage:HTML (EEx)"
+    "onLanguage:HTML (EEx)",
+    "onLanguage:html-eex"
   ],
   "main": "./out/extension",
   "contributes": {
@@ -43,33 +44,43 @@
           ".html.eex",
           ".html.leex"
         ]
+      },
+      {
+        "id": "html-eex",
+        "aliases": [
+          "html-eex"
+        ],
+        "extensions": [
+          ".html.eex",
+          ".html.leex"
+        ]
       }
     ],
     "configuration": {
       "type": "object",
       "title": "VSCode EEx Beautify configuration",
       "properties": {
-        "vscode-eex-beautify.tabStops": {
+        "vscode-eex-format.tabStops": {
           "type": "number",
           "default": 2,
           "description": "Set number of spaces per indent (default 2)"
         },
-        "vscode-eex-beautify.tab": {
+        "vscode-eex-format.tab": {
           "type": "boolean",
           "default": false,
           "description": "Indent using tabs"
         },
-        "vscode-eex-beautify.indentBy": {
+        "vscode-eex-format.indentBy": {
           "type": "number",
           "default": 0,
           "description": "Indent the output by NUMBER steps (default 0)"
         },
-        "vscode-eex-beautify.stopOnErrors": {
+        "vscode-eex-format.stopOnErrors": {
           "type": "boolean",
           "default": false,
           "description": "Stop when invalid nesting is encountered in the input"
         },
-        "vscode-eex-beautify.keepBlankLines": {
+        "vscode-eex-format.keepBlankLines": {
           "type": "number",
           "default": 0,
           "description": "Set number of consecutive blank lines (default 0)"
@@ -85,10 +96,10 @@
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^8.10.38",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.35"
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.13",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5",
+    "vscode": "^1.1.37"
   }
 }
