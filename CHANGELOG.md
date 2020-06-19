@@ -9,6 +9,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fork [EEx Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=zerokol.vscode-eex-beautify)
 - Add the new html-eex file format from Elixir-Ls
 
-## [0.0.2]
+## [0.1.0]
 
 - Modify readme
