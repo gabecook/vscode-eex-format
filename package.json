@@ -21,7 +21,8 @@
     "onLanguage:html",
     "onLanguage:eex",
     "onLanguage:HTML (EEx)",
-    "onLanguage:html-eex"
+    "onLanguage:html-eex",
+    "onLanguage:phoenix-heex"
   ],
   "main": "./out/extension",
   "contributes": {
